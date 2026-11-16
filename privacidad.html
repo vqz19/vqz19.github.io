@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad de Burke</title>
+<style>
+  :root { --fondo:#fafaf7; --texto:#1d1d1b; --suave:#5c5c57; --acento:#2f5d50; }
+  @media (prefers-color-scheme: dark) { :root { --fondo:#151515; --texto:#ededea; --suave:#a5a5a0; --acento:#7fb8a6; } }
+  body { margin:0; background:var(--fondo); color:var(--texto); font:17px/1.6 system-ui, sans-serif; }
+  main { max-width:640px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:1.8rem; } h2 { font-size:1.15rem; margin-top:1.6em; }
+  .suave { color:var(--suave); } a { color:var(--acento); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad de Burke</h1>
+  <p class="suave">Última actualización: 16 de noviembre de 2026.</p>
+
+  <h2>Quién usa Burke</h2>
+  <p>Burke es un asistente personal privado. Lo usa únicamente su dueño, que es también quien lo administra. No se ofrece a terceros.</p>
+
+  <h2>Qué datos de Google usa</h2>
+  <p>Con el permiso que su dueño aprueba, Burke lee los eventos de su Google Calendar (título, fecha y hora) para planear el día. Si su dueño activa la escritura, Burke crea o cambia eventos que corresponden a sus propias tareas, y solo después de que él confirma cada cambio.</p>
+
+  <h2>Para qué y dónde se guardan</h2>
+  <p>Los datos se usan solo para organizar el tiempo de su dueño. Se guardan en un servidor privado administrado por él. No se venden, no se comparten con terceros para publicidad y no se usan para entrenar modelos de inteligencia artificial.</p>
+  <p>Para entender los mensajes de su dueño, Burke envía el texto de esos mensajes a un proveedor de inteligencia artificial y, si son notas de voz, a un servicio de transcripción configurado para no usar los audios en su entrenamiento.</p>
+
+  <h2>Uso de datos de Google</h2>
+  <p>El uso que hace Burke de la información recibida de las APIs de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+
+  <h2>Cómo retirar el permiso</h2>
+  <p>El permiso se puede retirar en cualquier momento desde la cuenta de Google, en "Seguridad" → "Apps de terceros con acceso a la cuenta". Al retirarlo, Burke deja de ver y de cambiar el calendario de inmediato.</p>
+
+  <h2>Contacto</h2>
+  <p>Para cualquier pregunta sobre esta política, abre un mensaje en <a id="contacto" href="https://github.com">el proyecto de estas páginas en GitHub</a> (sección "Issues").</p>
+  <script>
+    // La dirección del proyecto sale del propio sitio: usuario.github.io → github.com/usuario/usuario.github.io/issues
+    var sitio = location.hostname;
+    if (sitio.endsWith(".github.io")) {
+      document.getElementById("contacto").href =
+        "https://github.com/" + sitio.split(".")[0] + "/" + sitio + "/issues";
+    }
+  </script>
+</main>
+</body>
+</html>
